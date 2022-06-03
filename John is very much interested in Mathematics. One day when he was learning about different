@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+ int n,num,digit=0,rem;
+ scanf("%d",&num);
+ n=num;
+ while(num!=0)
+ {
+ rem=num%10;
+ if(rem==digit)
+ {
+ printf("The given number is a good number");
+ return 0;
+ }
+num/=10;
+}
+ printf("the given number is not a good number");
+return 0;
+}
